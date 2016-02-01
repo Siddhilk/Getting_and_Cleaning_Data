@@ -1,7 +1,9 @@
+#Code Book - Getting and Cleaning Data
+
 <table><thead>
 <tr>
-<th align="right">id</th>
-<th align="center">name</th>
+<th align="right">id [Experimental Participant]</th>
+<th align="center">Activity Name</th>
 </tr>
 </thead><tbody>
 <tr>
