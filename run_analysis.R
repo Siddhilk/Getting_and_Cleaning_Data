@@ -18,6 +18,7 @@ SubjCombined <- rbind(trainSubject, testSubject)
 #Extracts only the measurements on the mean and standard deviation for each measurement
 features <- read.table("./data/UCI_HAR_Dataset/features.txt")
 selectedFeatures <- grep("mean{1}|std{1}", features[,2])
+names(DataCombined) <- features[selectedFeatures,2]
 
 #
 FromColRegex <- c("\\(\\)","mean","std","-")
