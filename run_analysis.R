@@ -40,3 +40,5 @@ tidydata <- cbind(SubjCombined, LableCombined, DataCombined)
 averageTidyData <- ddply(tidydata, .(subject, activity), function(x) colMeans(x[, 3:81]))
 names(averageTidyData) <- c("subject","activity",paste("Mean",names(averageTidyData[,-c(1,2)]),sep=''))
 write.table(averageTidyData, "./data/UCI_HAR_Dataset/averageTidyData.txt", sep = "\t", row.name=FALSE)
+
+
